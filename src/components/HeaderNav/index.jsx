@@ -12,10 +12,10 @@ export default class HeaderNav extends Component{
                     <div className="navbar-collapse">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/sign">注册</Link>
+                                <Link className="nav-link" to="/signUp">注册</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">登录</Link>
+                                <Link className="nav-link" to="/signIn">登录</Link>
                             </li>
                         </ul>
                     </div>

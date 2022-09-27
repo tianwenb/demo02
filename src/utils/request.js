@@ -36,11 +36,17 @@ instance.interceptors.request.use(
 
 //响应拦截器
 instance.interceptors.response.use(
-    response =>response.status === 200 ? Promise.resolve(response):Promise.reject(response),
+    res => {
+        return res
+    },
     error => {
-      const {response} = error;
-      errorHandle(response.status,response.info);
+        if (error.response.status === 504) {
+            return Promise.reject()
+        } else {
+            return Promise.reject();
+        }
     }
+
 
 )
 
