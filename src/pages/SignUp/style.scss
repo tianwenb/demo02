@@ -4,45 +4,47 @@ $color-bg: #ebecf0;
 $color-shadow: #babecc;
 $color-white: #fff;
 
-body,
-html {
+.signUpFormClass{
+
+  body,
+  html {
     background-color: $color-bg;
-}
+  }
 
-h1 {
+  h1 {
     margin: 0;
-}
+  }
 
-body,
-p,
-input,
-select,
-textarea,
-button {
+  body,
+  p,
+  input,
+  select,
+  textarea,
+  button {
     font-family: "Montserrat", sans-serif;
     letter-spacing: -0.2px;
     font-size: $ruler;
-}
+  }
 
-div,
-p {
+  div,
+  p {
     color: $color-shadow;
     text-shadow: 1px 1px 1px $color-white;
-}
+  }
 
-form {
+  form {
     padding: $ruler;
     width: $ruler * 20;
     margin: 0 auto;
-}
+  }
 
-.segment {
+  .segment {
     padding: $ruler * 2 0;
     text-align: center;
-}
+  }
 
-button,
-input {
+  button,
+  input {
     border: 0;
     outline: 0;
     font-size: $ruler;
@@ -50,15 +52,15 @@ input {
     padding: $ruler;
     background-color: $color-bg;
     text-shadow: 1px 1px 0 $color-white;
-}
+  }
 
-label {
+  label {
     display: block;
     margin-bottom: $ruler * 1.5;
     width: 100%;
-}
+  }
 
-input {
+  input {
     margin-right: $ruler/2;
     box-shadow: inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
     width: 100%;
@@ -67,13 +69,13 @@ input {
     appearance: none;
     -webkit-appearance: none;
 
-&:focus {
-     box-shadow: inset 1px 1px 2px $color-shadow,
-     inset -1px -1px 2px $color-white;
- }
-}
+    &:focus {
+      box-shadow: inset 1px 1px 2px $color-shadow,
+      inset -1px -1px 2px $color-white;
+    }
+  }
 
-button {
+  button {
     color: #61677c;
     font-weight: bold;
     box-shadow: -5px -5px 20px $color-white, 5px 5px 20px $color-shadow;
@@ -81,50 +83,52 @@ button {
     cursor: pointer;
     font-weight: 600;
 
-&:hover {
-     box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
- }
+    &:hover {
+      box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+    }
 
-&:active {
-     box-shadow: inset 1px 1px 2px $color-shadow,
-     inset -1px -1px 2px $color-white;
- }
+    &:active {
+      box-shadow: inset 1px 1px 2px $color-shadow,
+      inset -1px -1px 2px $color-white;
+    }
 
-.icon {
-    margin-right: $ruler/2;
-}
+    .icon {
+      margin-right: $ruler/2;
+    }
 
-&.unit {
-     border-radius: $ruler/2;
-     line-height: 0;
-     width: $ruler * 3;
-     height: $ruler * 3;
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-     margin: 0 $ruler/2;
-     font-size: $ruler * 1.2;
+    &.unit {
+      border-radius: $ruler/2;
+      line-height: 0;
+      width: $ruler * 3;
+      height: $ruler * 3;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 $ruler/2;
+      font-size: $ruler * 1.2;
 
-.icon {
-    margin-right: 0;
-}
-}
+      .icon {
+        margin-right: 0;
+      }
+    }
 
-&.red {
-     display: block;
-     width: 100%;
-     color: $color-red;
- }
-}
+    &.red {
+      display: block;
+      width: 100%;
+      color: $color-red;
+    }
+  }
 
-.input-group {
+  .input-group {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 
-label {
-    margin: 0;
-    flex: 1;
-}
+    label {
+      margin: 0;
+      flex: 1;
+    }
+  }
+
 }

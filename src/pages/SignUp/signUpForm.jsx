@@ -42,7 +42,7 @@ export default class signUpForm extends Component{
     render() {
         const {username,password,phone} = this.state;
         return(
-            <div>
+            <div className="signUpFormClass">
                 <form onSubmit={this.onSubmit}>
                     <div className="segment">
                         <h1>Sign up</h1>

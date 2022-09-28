@@ -1,7 +1,6 @@
 import React,{Component} from "react";
 import "./style.scss";
 import api from "../../api";
-import axios from "axios";
 
 export default class signIn extends Component{
     //受控组件
