@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>reactDemo01</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <!-- 生产环境中不建议使用 -->
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        class Conter extends React.Component{
+            price = 1145;
+            state={
+                num:1,
+            }
+            _add(){
+                this.setState({num: this.state.num+1})
+            }
+            _reduce(){
+                this.setState({num: this.state.num-1})
+            }
+            render() {
+                return (
+                    <div>
+                        <h3>计算器</h3>
+                        <div>
+                            <div>单价：${this.price}</div>
+                            <div>
+                                <button onClick={this._reduce.bind(this)} disabled={this.state.num === 1}>-</button>
+                                <b>{this.state.num}</b>
+                                <button onClick={()=>this._add()}>+</button>
+                                <button onClick={this._add.bind(this)}>+</button>
+                            </div>
+                            <div>总价：￥{this.state.num+this.price}</div>
+                        </div>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<Conter/>,root)
+    </script>
+</body>
+</html>
